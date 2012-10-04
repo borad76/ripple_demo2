@@ -1,0 +1,6 @@
+.idea/
+.project
+.settings/
+bin/
+tags
+.DS_Store

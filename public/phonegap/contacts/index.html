@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+        <title>PhoneGap Contacts Demo App</title>
+        <link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+        <script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/lawnchair/adaptors/DOMStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/lawnchair/adaptors/WebkitSQLiteAdaptor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
+        <script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="title_bar">Phone<strong>Gap</strong> Contacts Demo</div>
+        <div id="welcome" class="view">
+            <div class="app_button contacts_button">Lookup Contacts</div>
+        </div>
+
+        <div id="contacts" class="view">
+            <div class="contacts_search">
+                <input type="text" id="contacts_filter" />
+                <div id="contact_list"></div>
+            </div>
+            <div id="search_button" class="app_button">Search</div>
+            <div class="app_button welcome_button">Back</div>
+        </div>
+
+        <div id="contact" class="view">
+            <div class="contact_info">
+                <div id="contact_name" class="contact_list_item"></div>
+                <a id="contact_email" class="contact_list_item"></a>
+                <a id="contact_phone" class="contact_list_item"></a>
+            </div>
+            <div id="search_reset_button" class="app_button">Go Back</div>
+        </div>
+    </body>
+</html>
